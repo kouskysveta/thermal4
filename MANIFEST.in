@@ -1,0 +1,4 @@
+include README.md
+recursive-include camera/templates *
+recursive-include camera/translations *
+recursive-include camera/static *

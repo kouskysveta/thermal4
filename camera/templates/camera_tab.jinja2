@@ -1,0 +1,34 @@
+
+
+<h6 data-bind="html: cameraStatusHook">Camera: Inactive</h6>
+<h6 data-bind="html: recordingStatusHook">Recording: Inactive</h6>
+
+<div id="buttons">
+    <button type="button" class="btn control-cam" data-bind="click: startCam">Start Cam</button>
+    <button type="button" class="btn control-cam" data-bind="click: stopCam">Stop Cam</button>
+    <button type="button" class="btn control-cam" data-bind="click: startRecording">Start Rec</button>
+    <button type="button" class="btn control-cam" data-bind="click: stopRecording">Stop Rec</button>
+    <button type="button" class="btn control-cam" data-bind="click: calibrateCam">Calibrate</button>
+</div>
+
+<div id="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    <span data-bind="html: errorMessageHook">This is an alert box.</span>
+</div>
+
+<img data-bind="attr: {src: imageNameHook}" />
+
+<div id="config">
+    <div>
+        <span>Max temp: </span> <span data-bind="html: maxTempHook"></span><br>
+    </div>
+    <label>
+        <input type="checkbox" id="correctTempsCheckbox" data-bind="click: correctTemps"> High Temperatures Correction<br>
+    </label>
+
+    <div>
+        <button type="button" class="btn" data-bind="click: updateTempWatch">Apply</button>
+        <input type="text" id="threshold" placeholder="Max temperature"><br>
+        <textarea id="commands" placeholder="Add gcodes "></textarea>
+    </div>
+</div>

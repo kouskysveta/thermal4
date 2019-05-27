@@ -33,7 +33,7 @@ plugin_url = "https://github.com/kouskysveta/thermal4"
 plugin_license = "AGPLv3"
 
 # Any additional requirements besides OctoPrint should be listed here
-plugin_requires = ["numpy","pyusb","opencv", "scipy"]
+plugin_requires = ["numpy","pyusb","python-opencv", "scipy"]
 
 ### --------------------------------------------------------------------------------------------------------------------
 ### More advanced options that you usually shouldn't have to touch follow after this point

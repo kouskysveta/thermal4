@@ -10,7 +10,7 @@ import time
 import numpy
 from usb import USBError
 from threading import Event, Thread, RLock
-from scipy.ndimage import median_filter
+#from scipy.ndimage import median_filter
 
 from camera.thermocam import thermocam_driver
 
@@ -79,7 +79,7 @@ class ThermoAnalyzer:
 
             # reshape array and apply median filter
             temp_matrix = numpy.reshape(temp_matrix[0:imgh*imgw], newshape=(imgh, imgw))
-            temp_matrix = median_filter(temp_matrix, size=(3, 3))
+            #temp_matrix = median_filter(temp_matrix, size=(3, 3))
             max_temp = max(temp_matrix.flat)
 
             # correct for high temperatures

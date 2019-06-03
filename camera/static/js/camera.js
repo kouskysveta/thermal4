@@ -3,10 +3,10 @@ $(function() {
         var self = this;
         self.settings = parameters[0];
 
-        self.host = "http://127.0.0.1:8091/";
+        self.host = "http://127.0.0.1:5000/";
         self.urlGET  = self.host + "plugin/camera/keep_alive";
         self.urlPOST = self.host + "api/plugin/camera";
-        self.xApiKey = "E4F3542466FB461BBC372DA9411184B9";
+        self.xApiKey = "42650F2CD0624A3597D69CF89AB6A107";
 
         self.intervals = {};
         self.settings = parameters[0];

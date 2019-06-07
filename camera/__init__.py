@@ -47,7 +47,7 @@ class ThermoAnalyzer:
         self.high_temp_correction_threshold = 50
         self.corr_param_a = 6,837
         self.corr_param_b = 2.6652*1.7134
-		self.corr_param_c = 42.605
+	self.corr_param_c = 42.605
         self.fps = 5
 
     def __del__(self):

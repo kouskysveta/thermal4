@@ -44,10 +44,11 @@ class ThermoAnalyzer:
 
         # TODO: Extract to yaml file
         self.temp_action_threshold = 250
-        self.high_temp_correction_threshold = 40
-        self.corr_param_a = 2
-        self.corr_param_b = 1000
-        self.fps = 9
+        self.high_temp_correction_threshold = 50
+        self.corr_param_a = 6,837
+        self.corr_param_b = 2.6652*1.7134
+		self.corr_param_c = 42.605
+        self.fps = 5
 
     def __del__(self):
         self.run_camera_flag.clear()
